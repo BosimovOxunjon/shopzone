@@ -27,7 +27,7 @@ const SignUp = () => {
       return window.location.replace("/home");
     }
     localStorage.setItem("token", JSON.stringify(data.token));
-    localStorage.setItem("user", JSON.stringify(data));
+    localStorage.setItem("user", JSON.stringify(user));
     console.log(data);
     return data;
   };
