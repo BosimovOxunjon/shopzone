@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import BackgroundImg from "../../assets/img/SignUp/background.png";
-import { Form, Input, Button, Radio } from "antd";
+import { Form, Input, Button } from "antd";
 import { Link } from "react-router-dom";
 import MainImg from "../../assets/img/SignUp/signup.png";
 import { StyledSignUp } from "../../styles/SignUp/signUp";
@@ -23,7 +23,7 @@ const SignUp = () => {
       ...value,
     });
     setUser(data);
-    if (data && data.success == true) {
+    if (data && data.success === true) {
       return window.location.replace("/home");
     }
     localStorage.setItem("token", JSON.stringify(data.token));
