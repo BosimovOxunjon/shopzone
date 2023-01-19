@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledSearch } from "../../styles/Search/search";
-import { Content, Button, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import HeaderLogo from "../../assets/img/logo/logo.png";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,6 @@ const Search = () => {
         <Button type="success">Search</Button>
         {/* </Form.Item> */}
       </Form>
-      {/* <Content></Content> */}
     </StyledSearch>
   );
 };

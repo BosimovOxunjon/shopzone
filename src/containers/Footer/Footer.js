@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { Container } from "@mui/material/";
+import { Container } from "@mui/material";
 
 const StyledFooter = styled("div")({
   backgroundColor: "#E2F4FF",
