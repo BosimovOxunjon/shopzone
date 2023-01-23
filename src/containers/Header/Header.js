@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import HeaderLogo from "../../assets/img/logo/logo.png";
 import { Link } from "react-router-dom";
-import Contact from "../Contact/Contact";
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -30,7 +29,6 @@ const Header = () => {
 
   return (
     <>
-      <Contact />
       <StyledHeader>
         <Container>
           <Box sx={{ width: "100%", display: "flex" }}>

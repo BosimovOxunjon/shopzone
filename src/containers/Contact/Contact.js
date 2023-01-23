@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledContact } from "../../styles/Contact/contact";
-import { Container, Box } from "@mui/system";
+import { Container, Box } from "@mui/material";
 import { LocationOn, LocalShipping } from "@mui/icons-material";
 
 const Contact = () => {
