@@ -4,6 +4,7 @@ import SignUp from "../containers/SignUp/SignUp";
 import Footer from "../containers/Footer/Footer";
 import Carousel from "../containers/Carousel/Carousel";
 import Home from "../containers/Home/Home";
+import Contact from "../containers/Contact/Contact";
 
 export default [
   {
@@ -12,10 +13,16 @@ export default [
     key: "signup",
   },
   {
+    path: "/contact",
+    component: Contact,
+    key: "contact",
+  },
+  {
     path: "/header",
     component: Header,
     key: "header",
-  }, {
+  },
+  {
     path: "/home",
     component: Home,
     key: "home",
