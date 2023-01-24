@@ -22,6 +22,7 @@ const StyledSearch = styled.header`
     padding: 15px 30px;
     border-radius: 20px;
     border: none;
+    outline: 0;
   }
   .search_form-btn {
     position: absolute;

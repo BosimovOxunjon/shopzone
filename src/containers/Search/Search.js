@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyledSearch } from "../../styles/Search/search";
 import HeaderLogo from "../../assets/img/logo/logo.png";
 import { Link } from "react-router-dom";
-import { Button, Container, Grid } from "@mui/material";
+import { Button, Container, Grid, FormControl } from "@mui/material";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -16,7 +16,12 @@ const Search = () => {
         <Link to={`/`}>
           <img className="header_logo" src={HeaderLogo} alt="logo-img" />
         </Link>
-        <form className="search_form">
+        <FormControl
+          sx={{
+            display: { xs: "none", sm: "block" },
+          }}
+          className="search_form"
+        >
           <input
             className="search_form-input"
             type="text"
@@ -26,7 +31,7 @@ const Search = () => {
           <Button variant="contained" className="search_form-btn">
             Search
           </Button>
-        </form>
+        </FormControl>
         <DehazeIcon
           sx={{
             display: { xs: "inline-block", md: "none" },
@@ -39,11 +44,13 @@ const Search = () => {
         <Grid
           component="div"
           sx={{
-            display: show ? "grid" : { xs: "none", md: "block" },
-            position: "absolute",
-            right: "0",
-            left: "0",
-            top: "100px",
+            display: { md: "block" } ? show : "grid" && { md: "block" },
+            justifyContent: show ? "center" : "inherit",
+            visibility: show ? "visible" : { xs: "hidden", md: "visible" },
+            position: { xs: "absolute", md: "inherit" },
+            right: show ? "0" : "auto",
+            left: show ? "0" : "auto",
+            top: show ? "100px" : "auto",
             background: "#003f62",
             ml: { xs: "0", md: "auto" },
           }}
