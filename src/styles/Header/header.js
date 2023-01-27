@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
-  height: 90px;
+  min-height: 90px;
   .header_logo {
     display: inline-block;
     margin: 0 auto;

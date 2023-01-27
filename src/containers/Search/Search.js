@@ -44,15 +44,16 @@ const Search = () => {
         <Grid
           component="div"
           sx={{
-            display: { md: "block" } ? show : "grid" && { md: "block" },
+            display: show ? "grid" : { xs: "none", md: "block" },
             justifyContent: show ? "center" : "inherit",
             visibility: show ? "visible" : { xs: "hidden", md: "visible" },
             position: { xs: "absolute", md: "inherit" },
             right: show ? "0" : "auto",
             left: show ? "0" : "auto",
-            top: show ? "100px" : "auto",
+            top: show ? "90px" : "auto",
             background: "#003f62",
             ml: { xs: "0", md: "auto" },
+            zIndex: show ? "1" : "0",
           }}
         >
           <Button className="search_link" sx={{ ml: "auto" }}>

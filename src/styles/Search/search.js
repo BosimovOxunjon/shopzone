@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const StyledSearch = styled.header`
+const StyledSearch = styled.section`
+  position: relative;
   display: flex;
   align-items: center;
   height: 100px;
@@ -27,7 +28,7 @@ const StyledSearch = styled.header`
   .search_form-btn {
     position: absolute;
     right: 0;
-    padding: 10px 20px;
+    padding: 10.4px 20px;
     border-radius: 20px;
     background: #eda415;
   }

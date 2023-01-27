@@ -37,6 +37,10 @@ const Header = () => {
                 fontWeight: "600",
                 color: "white",
                 background: "#EDA415",
+                p: "0 10px",
+                "&:hover": {
+                  background: "#e3bf78",
+                },
               }}
               id="browse-categories"
               aria-controls={open ? "browse-menu" : undefined}

@@ -18,7 +18,14 @@ const Carousel = () => {
     <StyledCarousel>
       <Container>
         <Slider {...settings}>
-          <Box component="div" className="slider_item">
+          <Box
+            component="div"
+            sx={{
+              flexWrap: { xs: "wrap", md: "nowrap" },
+              flexDirection: { xs: "column", md: "row" },
+            }}
+            className="slider_item"
+          >
             <div>
               <h1 className="carousel_title">
                 Canon <br /> camera
@@ -42,7 +49,42 @@ const Carousel = () => {
               <img src={CarouselImg} alt="carousel-img" />
             </div>
           </Box>
-          <Box component="div" className="slider_item">
+          <Box
+            component="div"
+            sx={{
+              flexWrap: { xs: "wrap", md: "nowrap" },
+              flexDirection: { xs: "column", md: "row" },
+            }}
+            className="slider_item"
+          >
+            <div>
+              <h1 className="carousel_title">Canon camera</h1>
+              <Button
+                variant="filledTonal"
+                sx={{ background: "#EDA415", color: "white" }}
+                className="carousel_btn"
+              >
+                Shop now
+              </Button>
+              <Button
+                variant="outlined"
+                sx={{ color: "#1B5A7D" }}
+                className="carousel_btn carousel_btn-view"
+              >
+                View more
+              </Button>
+            </div>
+            <div>
+              <img src={CarouselImg} alt="carousel-img" />
+            </div>
+          </Box>
+          <Box
+            component="div"
+            sx={{
+              flexWrap: { xs: "wrap", md: "nowrap" },
+            }}
+            className="slider_item"
+          >
             <div>
               <h1>Canon camera</h1>
               <Button
@@ -64,15 +106,6 @@ const Carousel = () => {
               <img src={CarouselImg} alt="carousel-img" />
             </div>
           </Box>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
         </Slider>
       </Container>
     </StyledCarousel>

@@ -35,7 +35,7 @@ const Contact = () => {
             mb: { xs: "10px", sm: "0" },
           }}
         >
-          <Box component="div" className="contact_info" sx={{ mr: "10px" }}>
+          <Box component="div" className="contact_info" sx={{ mr: "20px" }}>
             <LocationOn className="contact_icon" />
             Our store
           </Box>
