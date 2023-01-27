@@ -50,5 +50,8 @@ const StyledSearch = styled.section`
       border-radius: 10px;
     }
   }
+  button {
+    text-transform: capitalize;
+  }
 `;
 export { StyledSearch };

@@ -8,11 +8,14 @@ import {
   Button,
   Menu,
   MenuItem,
+  Grid,
 } from "@mui/material";
+import DehazeIcon from "@mui/icons-material/Dehaze";
 import HeaderLogo from "../../assets/img/logo/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
   const handleChange = (event, newValue) => {
@@ -50,44 +53,68 @@ const Header = () => {
             >
               Browse categories
             </Button>
-            <Menu
-              id="browse-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                "aria-labelledby": "browse-categories",
-              }}
-            >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
-            </Menu>
-            <Tabs
-              sx={{ ml: "10%" }}
-              onChange={handleChange}
-              value={value}
-              aria-label="Tabs where selection follows focus"
-              selectionFollowsFocus
-            >
-              {/* </Tab> */}
-              <Tab label="Home" className="header_link" />
-              <Tab label="Catalog" className="header_link" />
-              <Tab label="Blog" className="header_link" />
-              <Tab label="Pages" className="header_link" />
-              <Tab label="About us" className="header_link" />
-            </Tabs>
-            <Button
+            <DehazeIcon
               sx={{
-                color: "#003F62",
-                fontWeight: "700",
-                textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                display: { xs: "inline-block", md: "none" },
+                color: "#000",
+                cursor: "pointer",
                 ml: "auto",
               }}
-              variant="text"
+              onClick={() => setShow(!show)}
+            />
+            <Grid
+              component="div"
+              sx={{
+                display: show ? "grid" : { xs: "none", md: "flex" },
+                justifyContent: show ? "center" : "inherit",
+                visibility: show ? "visible" : { xs: "hidden", md: "visible" },
+                position: { xs: "absolute", md: "inherit" },
+                right: show ? "0" : "auto",
+                left: show ? "0" : "auto",
+                top: show ? "90px" : "auto",
+                ml: { xs: "0", md: "auto" },
+                zIndex: show ? "1" : "0",
+              }}
             >
-              30 Days Free Return
-            </Button>
+              <Menu
+                id="browse-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "browse-categories",
+                }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
+              <Tabs
+                sx={{ ml: "10%" }}
+                onChange={handleChange}
+                value={value}
+                aria-label="Tabs where selection follows focus"
+                selectionFollowsFocus
+              >
+                {/* </Tab> */}
+                <Tab label="Home" className="header_link" />
+                <Tab label="Catalog" className="header_link" />
+                <Tab label="Blog" className="header_link" />
+                <Tab label="Pages" className="header_link" />
+                <Tab label="About us" className="header_link" />
+              </Tabs>
+              <Button
+                sx={{
+                  color: "#003F62",
+                  fontWeight: "700",
+                  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                  ml: "auto",
+                }}
+                variant="text"
+              >
+                30 Days Free Return
+              </Button>
+            </Grid>
           </Box>
         </Container>
       </StyledHeader>

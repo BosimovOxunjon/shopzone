@@ -27,6 +27,10 @@ const StyledCarousel = styled.section`
   button::before {
     display: none;
   }
+  .carousel__slider {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export { StyledCarousel };
