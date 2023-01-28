@@ -3,11 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Avatar, Card, Skeleton, Switch } from "antd";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
 import { StyledCarousel } from "../../styles/Carousel/carousel";
 import { Container, Box, Button } from "@mui/material";
 import CarouselImg from "../../../src/assets/img/Carousel/carousel.png";
@@ -171,7 +166,7 @@ const Carousel = () => {
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
                 title="Card title"
-                // description="This is the description"
+                description="(6 items)"
               />
             </Card>
           </div>
@@ -190,7 +185,7 @@ const Carousel = () => {
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
                 title="Card title"
-                // description="This is the description"
+                description="(6 items)"
               />
             </Card>
           </div>
@@ -209,7 +204,7 @@ const Carousel = () => {
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
                 title="Card title"
-                // description="This is the description"
+                description="(6 items)"
               />
             </Card>
           </div>
@@ -228,7 +223,7 @@ const Carousel = () => {
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
                 title="Card title"
-                // description="This is the description"
+                description="(6 items)"
               />
             </Card>
           </div>
@@ -247,7 +242,7 @@ const Carousel = () => {
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
                 title="Card title"
-                // description="This is the description"
+                description="(6 items)"
               />
             </Card>
           </div>
