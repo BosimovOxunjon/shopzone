@@ -90,7 +90,7 @@ const Header = () => {
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
               </Menu>
               <Tabs
-                sx={{ ml: "10%" }}
+                sx={{ ml: "10%", flexDirection: { xs: "column", md: "row" } }}
                 onChange={handleChange}
                 value={value}
                 aria-label="Tabs where selection follows focus"

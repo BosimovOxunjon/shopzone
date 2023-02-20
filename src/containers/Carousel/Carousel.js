@@ -160,7 +160,7 @@ const Carousel = () => {
             >
               <Meta
                 style={{
-                  width: 400,
+                  width: 300,
                 }}
                 avatar={
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
@@ -178,9 +178,10 @@ const Carousel = () => {
               }}
             >
               <Meta
-                style={{
-                  width: 400,
-                }}
+                // style={{
+                //   width: 300,
+                //   overflow: "hidden",
+                // }}
                 avatar={
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
@@ -197,9 +198,10 @@ const Carousel = () => {
               }}
             >
               <Meta
-                style={{
-                  width: 400,
-                }}
+                // style={{
+                //   width: 300,
+                //   overflow: "hidden",
+                // }}
                 avatar={
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }
@@ -216,9 +218,10 @@ const Carousel = () => {
               }}
             >
               <Meta
-                style={{
-                  width: 400,
-                }}
+                // style={{
+                //   width: 300,
+                //   overflow: "hidden",
+                // }}
                 avatar={
                   <Avatar src={CarouselImg} style={{ width: 60, height: 60 }} />
                 }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
   display: flex;
+  position: relative;
   align-items: center;
   min-height: 90px;
   .header_logo {

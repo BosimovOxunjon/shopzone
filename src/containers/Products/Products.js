@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "@mui/material";
 import { Card, Col, Row, Rate, Button, Pagination } from "antd";
 import MainImg from "../../assets/img/Products/headphone.svg";
@@ -28,78 +28,6 @@ const Products = () => {
             justifyContent: "space-between",
           }}
         >
-          <Col className="card__wrapper">
-            <Card
-              hoverable
-              style={{ width: 280 }}
-              cover={<img alt="example" src={MainImg} />}
-            >
-              <Meta
-                style={{
-                  paddingTop: 0,
-                }}
-                title="Wireless headphones"
-              />
-              <div className="additional">
-                <p className="price">20$</p>
-                <Rate allowHalf defaultValue={0} />
-              </div>
-            </Card>
-          </Col>
-          <Col className="card__wrapper">
-            <Card
-              hoverable
-              style={{ width: 280 }}
-              cover={<img alt="example" src={MainImg} />}
-            >
-              <Meta
-                style={{
-                  paddingTop: 0,
-                }}
-                title="Wireless headphones"
-              />
-              <div className="additional">
-                <p className="price">20$</p>
-                <Rate allowHalf defaultValue={0} />
-              </div>
-            </Card>
-          </Col>
-          <Col className="card__wrapper">
-            <Card
-              hoverable
-              style={{ width: 280 }}
-              cover={<img alt="example" src={MainImg} />}
-            >
-              <Meta
-                style={{
-                  paddingTop: 0,
-                }}
-                title="Wireless headphones"
-              />
-              <div className="additional">
-                <p className="price">20$</p>
-                <Rate allowHalf defaultValue={0} />
-              </div>
-            </Card>
-          </Col>
-          <Col className="card__wrapper">
-            <Card
-              hoverable
-              style={{ width: 280 }}
-              cover={<img alt="example" src={MainImg} />}
-            >
-              <Meta
-                style={{
-                  paddingTop: 0,
-                }}
-                title="Wireless headphones"
-              />
-              <div className="additional">
-                <p className="price">20$</p>
-                <Rate allowHalf defaultValue={0} />
-              </div>
-            </Card>
-          </Col>
           <Col className="card__wrapper">
             <Card
               hoverable
